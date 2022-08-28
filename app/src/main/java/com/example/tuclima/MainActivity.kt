@@ -3,6 +3,7 @@ package com.example.tuclima
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Toast
 import com.android.volley.NetworkResponse
 import com.android.volley.Request
@@ -13,9 +14,12 @@ import kotlinx.android.synthetic.main.activity_main.*
 import org.json.JSONObject
 
 class MainActivity : AppCompatActivity() {
+    var btn1: Button?= null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
 
         val lat=intent.getStringExtra("lat")
         var long=intent.getStringExtra("long")
@@ -24,6 +28,10 @@ class MainActivity : AppCompatActivity() {
         window.statusBarColor= Color.parseColor("#42B839")
         getJsonData()
 
+        btn1=findViewById(R.id.btn_buscar)
+        btn1!!.setOnClickListener{
+            getJsonData()
+        }
     }
     private fun getJsonData()
     {
