@@ -13,14 +13,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TuClima"
         tools:targetApi="31">
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+
+
+        //Se cambio el codigo de la actividad Main para poder hacer la actividad SplashScreen principal
+        <activity android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/Theme.MiTema">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
         </activity>
     </application>
 
