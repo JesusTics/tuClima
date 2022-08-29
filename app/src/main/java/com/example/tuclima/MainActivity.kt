@@ -85,7 +85,7 @@ class MainActivity : AppCompatActivity() {
     {
         val API_KEY="25555992fe70125719c4f526b4729330"
         val queue = Volley.newRequestQueue(this)
-        val url = "https://api.openweathermap.org/data/2.5/forecast?q=${txt_ciudad.text}&appid=${API_KEY}"
+        val url = "https://api.openweathermap.org/data/2.5/forecast?q=${txt_ciudad.text}&zip=${txt_cp.text}&appid=${API_KEY}"
         val jsonRequest = JsonObjectRequest(
             Request.Method.GET, url, null,
             Response.Listener { response ->
@@ -97,13 +97,27 @@ class MainActivity : AppCompatActivity() {
 
     }
     private fun setValues(response:JSONObject){
-        //coordenadas.text=response.getJSONArray("list").getJSONObject(0).getJSONObject("main").getString("temp")
+        inf_ciudad.text=response.getJSONObject("city").getString("name")
         var temperatura=response.getJSONArray("list").getJSONObject(0).getJSONObject("main").getString("temp")
+        //Operacion para convertir los grados
         temperatura=((((temperatura).toFloat()-273.15)).toInt()).toString()
-        coordenadas.text=temperatura
-        //coordenadas.text=response.getJSONObject("city").getString("id")
-
-
+        inf_temperatura.text=temperatura + "°C"
+        //Temperatura maxima
+        var tempMax = response.getJSONArray("list").getJSONObject(0).getJSONObject("main").getString("temp_max")
+        tempMax=((((tempMax).toFloat()-273.15)).toInt()).toString()
+        inf_temp_max.text=tempMax + "°C"
+        //Temperatura Minima
+        var tempMin = response.getJSONArray("list").getJSONObject(0).getJSONObject("main").getString("temp_min")
+        tempMin=((((tempMin).toFloat()-273.15)).toInt()).toString()
+        inf_temp_min.text=tempMin + "°C"
+        //Presion
+        inf_presion.text=response.getJSONArray("list").getJSONObject(0).getJSONObject("main").getString("pressure") +" hPa"
+        //Humedad
+        inf_humedad.text=response.getJSONArray("list").getJSONObject(0).getJSONObject("main").getString("humidity") + "%"
+        //Sensacion termica
+        var sensacion = response.getJSONArray("list").getJSONObject(0).getJSONObject("main").getString("feels_like")
+        sensacion=((((sensacion).toFloat()-273.15)).toInt()).toString()
+        inf_sens_term.text=sensacion + "°C"
     }
 
 }
