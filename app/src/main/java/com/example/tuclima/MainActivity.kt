@@ -118,6 +118,63 @@ class MainActivity : AppCompatActivity() {
         var sensacion = response.getJSONArray("list").getJSONObject(0).getJSONObject("main").getString("feels_like")
         sensacion=((((sensacion).toFloat()-273.15)).toInt()).toString()
         inf_sens_term.text=sensacion + "°C"
+
+        //fecha1
+        fecha1.text=response.getJSONArray("list").getJSONObject(8).getString("dt_txt")
+
+        var f1min = response.getJSONArray("list").getJSONObject(8).getJSONObject("main").getString("temp_min")
+        f1min=((((f1min).toFloat()-273.15)).toInt()).toString()
+        f1_tempMin.text="Temperatura maxima: " + f1min + "°C"
+
+        var f1max = response.getJSONArray("list").getJSONObject(8).getJSONObject("main").getString("temp_min")
+        f1max=((((f1max).toFloat()-273.15)).toInt()).toString()
+        f1_tempMax.text="Temperatura maxima: " + f1max + "°C"
+
+        //fecha2
+        fecha2.text=response.getJSONArray("list").getJSONObject(16).getString("dt_txt")
+
+        var f2min = response.getJSONArray("list").getJSONObject(16).getJSONObject("main").getString("temp_min")
+        f2min=((((f2min).toFloat()-273.15)).toInt()).toString()
+        f2_tempMin.text="Temperatura maxima: " + f2min + "°C"
+
+        var f2max = response.getJSONArray("list").getJSONObject(16).getJSONObject("main").getString("temp_min")
+        f2max=((((f2max).toFloat()-273.15)).toInt()).toString()
+        f2_tempMax.text="Temperatura maxima: " + f2max + "°C"
+
+        //fecha3
+        fecha3.text=response.getJSONArray("list").getJSONObject(24).getString("dt_txt")
+
+        var f3min = response.getJSONArray("list").getJSONObject(24).getJSONObject("main").getString("temp_min")
+        f3min=((((f3min).toFloat()-273.15)).toInt()).toString()
+        f3_tempMin.text="Temperatura maxima: " + f3min + "°C"
+
+        var f3max = response.getJSONArray("list").getJSONObject(24).getJSONObject("main").getString("temp_min")
+        f3max=((((f3max).toFloat()-273.15)).toInt()).toString()
+        f3_tempMax.text="Temperatura maxima: " + f3max + "°C"
+
+        //fecha4
+        fecha4.text=response.getJSONArray("list").getJSONObject(32).getString("dt_txt")
+
+        var f4min = response.getJSONArray("list").getJSONObject(32).getJSONObject("main").getString("temp_min")
+        f4min=((((f4min).toFloat()-273.15)).toInt()).toString()
+        f4_tempMin.text="Temperatura maxima: " + f4min + "°C"
+
+        var f4max = response.getJSONArray("list").getJSONObject(32).getJSONObject("main").getString("temp_min")
+        f4max=((((f4max).toFloat()-273.15)).toInt()).toString()
+        f4_tempMax.text="Temperatura maxima: " + f4max + "°C"
+
+        //fecha5
+        fecha5.text=response.getJSONArray("list").getJSONObject(39).getString("dt_txt")
+
+        var f5min = response.getJSONArray("list").getJSONObject(39).getJSONObject("main").getString("temp_min")
+        f5min=((((f5min).toFloat()-273.15)).toInt()).toString()
+        f5_tempMin.text="Temperatura maxima: " + f5min + "°C"
+
+        var f5max = response.getJSONArray("list").getJSONObject(39).getJSONObject("main").getString("temp_min")
+        f5max=((((f5max).toFloat()-273.15)).toInt()).toString()
+        f5_tempMax.text="Temperatura maxima: " + f5max + "°C"
+
+
     }
 
 }

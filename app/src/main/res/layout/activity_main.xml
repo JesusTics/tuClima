@@ -244,30 +244,25 @@
                     android:text="Buscar"
                     android:textAllCaps="false"
                     android:textSize="10sp" />
-
-                <TextView
-                    android:id="@+id/coordenadas"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="Latitud, longitud"
-                    android:textColor="@color/black" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
+
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
+
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     app:cardBackgroundColor="@color/white"
-                    app:cardElevation="5dp"
-                    app:cardCornerRadius="10dp">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -311,7 +306,7 @@
                                 android:text="Temperatura: "
                                 android:textColor="@color/black"
                                 android:textSize="14sp"
-                                android:textStyle="bold"/>
+                                android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/inf_temperatura"
@@ -319,7 +314,7 @@
                                 android:layout_height="wrap_content"
                                 android:text=""
                                 android:textColor="@color/black"
-                                android:textSize="14sp"/>
+                                android:textSize="14sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -334,7 +329,7 @@
                                 android:text="Temperatura max: "
                                 android:textColor="@color/black"
                                 android:textSize="14sp"
-                                android:textStyle="bold"/>
+                                android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/inf_temp_max"
@@ -342,7 +337,7 @@
                                 android:layout_height="wrap_content"
                                 android:text=""
                                 android:textColor="@color/black"
-                                android:textSize="14sp"/>
+                                android:textSize="14sp" />
 
                             <TextView
                                 android:id="@+id/textView14"
@@ -352,7 +347,7 @@
                                 android:text="Temperatura min: "
                                 android:textColor="@color/black"
                                 android:textSize="14sp"
-                                android:textStyle="bold"/>
+                                android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/inf_temp_min"
@@ -360,7 +355,7 @@
                                 android:layout_height="wrap_content"
                                 android:text=""
                                 android:textColor="@color/black"
-                                android:textSize="14sp"/>
+                                android:textSize="14sp" />
 
                         </LinearLayout>
 
@@ -376,7 +371,7 @@
                                 android:text="Sensación Térmica: "
                                 android:textColor="@color/black"
                                 android:textSize="14sp"
-                                android:textStyle="bold"/>
+                                android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/inf_sens_term"
@@ -384,7 +379,7 @@
                                 android:layout_height="wrap_content"
                                 android:text=""
                                 android:textColor="@color/black"
-                                android:textSize="14sp"/>
+                                android:textSize="14sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -399,7 +394,7 @@
                                 android:text="Presion: "
                                 android:textColor="@color/black"
                                 android:textSize="14sp"
-                                android:textStyle="bold"/>
+                                android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/inf_presion"
@@ -407,7 +402,7 @@
                                 android:layout_height="wrap_content"
                                 android:text=""
                                 android:textColor="@color/black"
-                                android:textSize="14sp"/>
+                                android:textSize="14sp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -422,7 +417,7 @@
                                 android:text="Humedad: "
                                 android:textColor="@color/black"
                                 android:textSize="14sp"
-                                android:textStyle="bold"/>
+                                android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/inf_humedad"
@@ -430,7 +425,7 @@
                                 android:layout_height="wrap_content"
                                 android:text=""
                                 android:textColor="@color/black"
-                                android:textSize="14sp"/>
+                                android:textSize="14sp" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -438,6 +433,282 @@
             </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:id="@+id/fechas1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/fecha1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/f1_tempMin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/f1_tempMax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/fecha2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/f2_tempMin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/f2_tempMax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fechas2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/fecha3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/f3_tempMin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/f3_tempMax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/fecha4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/f4_tempMin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/f4_tempMax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fechas3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/fecha5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/f5_tempMin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/f5_tempMax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
 
     </LinearLayout>
 
